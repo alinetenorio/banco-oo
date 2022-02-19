@@ -12,6 +12,7 @@ import banco.domain.pessoa.Pessoa;
 import banco.util.CargoEnum;
 import banco.util.Endereco;
 import banco.view.console.BancoView;
+import banco.view.console.InicioView;
 
 /**
  * Hello world!
@@ -21,6 +22,6 @@ public class App
 {
     public static void main( String[] args )
     {
-       BancoView.exibirMenu();
+       InicioView.exibirMenu();
     }
 }

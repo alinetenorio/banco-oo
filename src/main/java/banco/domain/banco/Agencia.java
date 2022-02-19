@@ -29,4 +29,11 @@ public class Agencia {
     this.endereco = endereco;
     this.telefone = telefone;
   }
+
+  public String toString() {
+    return "\nDados da agência:\n" +
+            "Número: " + this.getNumero() + "\n" +
+            "Endereço: " + this.getEndereco().toString() + "\n" +
+            "Telefone: " + this.getTelefone();
+  }
 }

@@ -17,10 +17,6 @@ public class BancoRepository {
     return DAO.listar(codigo);
   }
 
-  public void atualizar(int codigo, String nome) throws Exception {
-    DAO.atualizar(codigo, nome);
-  }
-
   public void atualizar(int codigo, String nome, String cnpj) throws Exception {
     DAO.atualizar(codigo, nome, cnpj);
   }
