@@ -12,10 +12,17 @@ import lombok.ToString;
 
 @Getter @Setter @ToString
 public abstract class Conta {
+  private static int SEQUENCIAL = 1;
+
   private Agencia agencia;
   private String numero;
   private BigDecimal saldo;
   private List<Cliente> titulares;
+  private int codigo;
+
+  {
+    this.codigo = SEQUENCIAL++;
+  }
 
   public Conta(Agencia agencia, String numero, Cliente titular) {
     this.agencia = agencia;
