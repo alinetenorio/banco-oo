@@ -28,15 +28,4 @@ public class AgenciaRepository {
     DAO.adicionarConta(agencia, conta);
   }
 
-  // public void removerAgencia(int codigo, Agencia agencia) throws Exception {
-  //   DAO.removerAgencia(codigo, agencia);
-  // }
-
-  // public void remover(int codigo) throws Exception {
-  //   DAO.remover(codigo);
-  // }
-
-  // public List<Banco> listarTodos() throws Exception {
-  //   return DAO.listarTodos();
-  // }
 }

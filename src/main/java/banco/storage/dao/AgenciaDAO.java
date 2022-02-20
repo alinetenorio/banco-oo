@@ -72,30 +72,4 @@ public class AgenciaDAO {
     agencia.getContas().add(conta);        
   }
 
-  // public void removerAgencia(int codigo, Agencia agencia) throws Exception {
-  //   for( Banco b : bancos ) {
-  //     if( codigo == b.getCodigo() ) {
-  //       b.getAgencias().remove(agencia);
-  //       return;
-  //     }
-  //   }
-  //   throw new Exception("O banco não foi encontrado no sistema.");
-  // }
-
-  // public void remover(int codigo) throws Exception {
-  //   for( Banco b : bancos ) {
-  //     if( codigo == b.getCodigo() ) {
-  //       bancos.remove(b);
-  //       return;
-  //     }
-  //   }
-  //   throw new Exception("O banco não foi encontrado no sistema.");
-  // }
-
-  // public List<Banco> listarTodos() throws Exception {
-  //   if (bancos.size() == 0 ) {
-  //     throw new Exception("Não existem bancos cadastrados.");
-  //   }
-  //   return bancos;
-  // }
 }

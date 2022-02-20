@@ -1,12 +1,10 @@
 package banco.domain.conta;
 
 import java.math.BigDecimal;
-import java.util.ArrayList;
 import java.util.List;
 
 import banco.domain.banco.Agencia;
 import banco.domain.pessoa.Cliente;
-import banco.domain.pessoa.Pessoa;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;

@@ -1,7 +1,6 @@
 package banco.storage.repositories;
 
 import java.math.BigDecimal;
-import java.util.List;
 
 import banco.domain.conta.Conta;
 import banco.domain.pessoa.Cliente;
