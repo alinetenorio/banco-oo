@@ -9,8 +9,8 @@ import banco.domain.conta.Conta;
 import banco.domain.conta.ContaCorrente;
 import banco.domain.pessoa.Funcionario;
 import banco.domain.pessoa.Pessoa;
-import banco.util.CargoEnum;
 import banco.util.Endereco;
+import banco.util.enums.CargoEnum;
 import banco.view.console.BancoView;
 import banco.view.console.InicioView;
 

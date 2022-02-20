@@ -15,7 +15,8 @@ public abstract class BancoView {
 
     do {
       System.out.println(
-        "\n1 - Cadastrar novo banco\n" +
+        "\nDigite a opção desejada:\n" +
+        "1 - Cadastrar novo banco\n" +
         "2 - Editar dados de um banco\n" +
         "3 - Adicionar nova agência\n" +
         "4 - Remover agência\n" +

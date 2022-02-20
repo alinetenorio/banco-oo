@@ -30,48 +30,29 @@ public class BancoDAO {
   }
 
   public void atualizar(int codigo, String nome, String cnpj) throws Exception {
-    for( Banco b : bancos ) {
-      if( codigo == b.getCodigo() ) {
-        if( !nome.equals("-1") ) {
-          b.setNome(nome);
-        }
-        if( !cnpj.equals("-1") ) {
-          b.setCnpj(cnpj);
-        }
-        return;
-      }
+    Banco banco = listar(codigo);
+      
+    if( !nome.equals("-1") ) {
+      banco.setNome(nome);
     }
-    throw new Exception("O banco não foi encontrado no sistema.");
+    if( !cnpj.equals("-1") ) {
+      banco.setCnpj(cnpj);
+    }       
   }
 
   public void adicionarAgencia(int codigo, Agencia agencia) throws Exception {
-    for( Banco b : bancos ) {
-      if( codigo == b.getCodigo() ) {
-        b.getAgencias().add(agencia);
-        return;
-      }
-    }
-    throw new Exception("O banco não foi encontrado no sistema.");
+    Banco banco = listar(codigo);
+    banco.getAgencias().add(agencia);
   }
 
   public void removerAgencia(int codigo, Agencia agencia) throws Exception {
-    for( Banco b : bancos ) {
-      if( codigo == b.getCodigo() ) {
-        b.getAgencias().remove(agencia);
-        return;
-      }
-    }
-    throw new Exception("O banco não foi encontrado no sistema.");
+    Banco banco = listar(codigo);
+    banco.getAgencias().remove(agencia);
   }
 
   public void remover(int codigo) throws Exception {
-    for( Banco b : bancos ) {
-      if( codigo == b.getCodigo() ) {
-        bancos.remove(b);
-        return;
-      }
-    }
-    throw new Exception("O banco não foi encontrado no sistema.");
+    Banco banco = listar(codigo);
+    bancos.remove(banco);
   }
 
   public List<Banco> listarTodos() throws Exception {

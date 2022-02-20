@@ -20,9 +20,6 @@ public class ContaPoupanca extends Conta{
     }
   }
 
-  public ContaPoupanca(Agencia agencia, String numero, Cliente titular){
-    super(agencia, numero, titular);
-  }
   public ContaPoupanca(Agencia agencia, String numero, List<Cliente> titulares){
     super(agencia, numero, titulares);
   }

@@ -1,42 +1,25 @@
 package banco.storage.repositories;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 import banco.domain.conta.Conta;
 import banco.domain.pessoa.Cliente;
+import banco.storage.dao.ContaDAO;
 
 public class ContaRepository {
-  // private ContaDAO DAO = new ContaDAO();
+  private ContaDAO DAO = new ContaDAO();
 
-  // public void criar(Conta conta) throws Exception {
-  //   DAO.criar(conta);
-  // }
+  public void atualizarSaldo(Conta conta, BigDecimal novoSaldo) throws Exception {
+    DAO.atualizarSaldo(conta, novoSaldo);
+  }
 
-  // public Conta listar(int codigo) throws Exception {
-  //   return DAO.listar(codigo);
-  // }
+  public void adicionarTitular(Conta conta, Cliente titular) throws Exception {
+    DAO.adicionarTitular(conta, titular);
+  }
 
-  // public void atualizar(int codigo, int numeroAgencia) throws Exception {
-  //   DAO.atualizar(codigo, numeroAgencia;
-  // }
+  public void removerTitular(Conta conta, Cliente titular) throws Exception {
+    DAO.removerTitular(conta, titular);
+  }
 
-  // public void atualizar(int codigo, int numeroAgencia, int numeroConta) throws Exception {
-  //   DAO.atualizar(codigo, numeroAgencia, numeroConta;
-  // }
-
-  // public void adicionarTitular(int codigo, Cliente titular) throws Exception {
-  //   DAO.adicionarAgencia(codigo, titular);
-  // }
-
-  // public void removerTitular(int codigo, Cliente titular) throws Exception {
-  //   DAO.removerAgencia(codigo, titular);
-  // }
-
-  // public void remover(int codigo) throws Exception {
-  //   DAO.remover(codigo);
-  // }
-
-  // public List<Conta> listarTodos() throws Exception {
-  //   return DAO.listarTodos();
-  // }
 }

@@ -6,6 +6,7 @@ import java.util.List;
 
 import banco.domain.banco.Agencia;
 import banco.domain.pessoa.Cliente;
+import banco.domain.pessoa.Pessoa;
 import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
@@ -22,14 +23,6 @@ public abstract class Conta {
 
   {
     this.codigo = SEQUENCIAL++;
-  }
-
-  public Conta(Agencia agencia, String numero, Cliente titular) {
-    this.agencia = agencia;
-    this.numero = numero;
-    this.saldo = BigDecimal.ZERO;
-    this.titulares = new ArrayList<>();
-    this.titulares.add(titular);
   }
 
   public Conta(Agencia agencia, String numero, List<Cliente> titulares) {

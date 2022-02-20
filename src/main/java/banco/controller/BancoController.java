@@ -5,7 +5,6 @@ import java.util.List;
 import banco.domain.banco.Agencia;
 import banco.domain.banco.Banco;
 import banco.storage.repositories.BancoRepository;
-import banco.util.Env;
 
 public class BancoController {
   private BancoRepository repository = new BancoRepository();

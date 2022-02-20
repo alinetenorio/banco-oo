@@ -2,6 +2,7 @@ package banco.domain.pessoa;
 
 import java.time.LocalDate;
 import banco.util.Endereco;
+import banco.util.enums.RoleEnum;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
@@ -15,4 +16,11 @@ public abstract class Pessoa {
   private Endereco endereco;
   private String telefone;
   private String email;
+  private RoleEnum role;
+
+  public Pessoa(String nome, String cpf, RoleEnum role) {
+    this.nome = nome;
+    this.cpf = cpf;
+    this.role = role;
+  }
 }

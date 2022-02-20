@@ -26,7 +26,7 @@ public class InicioView {
       
       switch( opcao ) {
         case 1:
-                   
+          ContaView.exibirMenu();     
           break;
 
         case 2:
@@ -34,7 +34,7 @@ public class InicioView {
           break;
 
         case 3:
-                 
+          PessoaView.exibirMenu();
           break;
 
         case 4:             
